@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="theme-color" content="#140d24" />
 <meta name="color-scheme" content="light dark" />
 <meta name="description" content="دارک پیکسل | منتخب تجهیزات گیمینگ — موس، کیبورد، هدست، مانیتور، اکشن فیگور و لوازم جانبی با معرفی فارسی و خرید از دیجی‌کالا" />
 <meta name="robots" content="index, follow" />
@@ -13,9 +14,14 @@
 <meta property="og:title" content="تجهیزات گیمینگ دارک پیکسل | موس، کیبورد، هدست و مانیتور گیمینگ" />
 <meta property="og:description" content="دارک پیکسل | منتخب تجهیزات گیمینگ — موس، کیبورد، هدست، مانیتور، اکشن فیگور و لوازم جانبی با معرفی فارسی و خرید از دیجی‌کالا" />
 <meta property="og:url" content="https://darkpixelfa.github.io/darkpixelfa/" />
-<meta name="twitter:card" content="summary" />
+<meta property="og:image" content="https://darkpixelfa.github.io/darkpixelfa/og-image.jpg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="675" />
+<meta property="og:image:alt" content="دارک پیکسل | تجهیزات گیمینگ" />
+<meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="تجهیزات گیمینگ دارک پیکسل | موس، کیبورد، هدست و مانیتور گیمینگ" />
 <meta name="twitter:description" content="دارک پیکسل | منتخب تجهیزات گیمینگ — موس، کیبورد، هدست، مانیتور، اکشن فیگور و لوازم جانبی با معرفی فارسی و خرید از دیجی‌کالا" />
+<meta name="twitter:image" content="https://darkpixelfa.github.io/darkpixelfa/og-image.jpg" />
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -667,7 +673,7 @@ document.getElementById("filters").addEventListener("click", function(e){
 /* Bundles */
 function bundleItem(id){
   var p = PRODUCTS.filter(function(x){ return x.id===id; })[0];
-  return '<li><img src="'+p.img+'" alt="" />'+p.fa+'<a href="'+buyLink(p.id)+'" target="_blank" rel="noopener sponsored">خرید</a></li>';
+  return '<li><img src="'+p.img+'" alt="'+p.fa+'" loading="lazy" />'+p.fa+'<a href="'+buyLink(p.id)+'" target="_blank" rel="noopener sponsored">خرید</a></li>';
 }
 document.getElementById("bundleEco").innerHTML = ["g102","k617","th5125","lg"].map(bundleItem).join('');
 document.getElementById("bundlePro").innerHTML = ["g502","huntsman","am01","lg"].map(bundleItem).join('');
